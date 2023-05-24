@@ -2,6 +2,86 @@
 
 /* HELPER: Checks Whether an Element Exists
 ----------------------------------------------------------------------------------------------------*/
+$('.slider-learning-space').owlCarousel({
+	    loop:true,
+	    margin:0,
+	    nav:true,
+	    dots:true,
+	    items:1,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        768:{
+	            items:1
+	        },
+	        1000:{
+	            items:1
+	        }
+	    }
+	});
+$('.slider-material').owlCarousel({
+	    loop:true,
+	    margin:0,
+	    nav:true,
+	    dots:false,
+	    items:1,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        768:{
+	            items:1
+	        },
+	        1000:{
+	            items:1
+	        }
+	    }
+	});
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+  draggable: false
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  draggable: false,
+  asNavFor: '.slider-for',
+  dots: false,
+  arrows: true,
+   centerPadding: '0px',
+  centerMode: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+      	arrows: true,
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+$(".ico-hide").click(function(){
+	$(this).parents(".blk-more").removeClass("active");
+})
+// $(".s-more").click(function(){
+// 	$(this).parents(".md-row").children(".blk-more").addClass("active");
+// })
+
 (function( $ ) {
 
   $.fn.extend({
@@ -289,23 +369,5 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
-$('.slider-learning-space').owlCarousel({
-	    loop:true,
-	    margin:0,
-	    nav:true,
-	    dots:true,
-	    items:1,
-	    responsive:{
-	        0:{
-	            items:1
-	        },
-	        768:{
-	            items:1
-	        },
-	        1000:{
-	            items:1
-	        }
-	    }
-	})
 
 
