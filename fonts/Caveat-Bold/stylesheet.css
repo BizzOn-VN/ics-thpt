@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('Caveat-Bold.eot');
+    src: url('Caveat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Caveat-Bold.woff2') format('woff2'),
+        url('Caveat-Bold.woff') format('woff'),
+        url('Caveat-Bold.ttf') format('truetype'),
+        url('Caveat-Bold.svg#Caveat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
