@@ -4,6 +4,9 @@
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
+  .page-learning-space {
+    padding-bottom: 0px;
+  }
   .page-learning-space .container {
     width: 77%;
     max-width: 77%;
@@ -446,6 +449,7 @@
 }
 
 .s-more {
+  cursor: pointer;
   background: #303030;
   display: inline-block;
   padding: 0.5vw 2vw 0.7vw 2vw;
