@@ -2,6 +2,11 @@
 
 /* HELPER: Checks Whether an Element Exists
 ----------------------------------------------------------------------------------------------------*/
+$(".smd-roll").click(function(){
+        $('html,body').animate({
+        scrollTop: $(".ct-thcs").offset().top -$(".page-header").height()
+      }, 'slow');
+  });
 $('.slider-learning-space').owlCarousel({
 	    loop:true,
 	    margin:0,
